@@ -23,7 +23,7 @@ Backend Setup
 
     Create ".env" file in the backend directory and add the " MONGO_URI " variable to connect to your MongoDB database
 
-    MONGO_URI="your-mongodb-uri-here"
+    MONGO_URI= your-mongodb-uri-here
 
 5. Start the Backend Server
 
