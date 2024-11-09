@@ -5,7 +5,7 @@ Follow these steps to set up and run the project:
 Backend Setup
 1. Download the project files
 
-    Ensure you have downloaded both the forntend and backend folders.
+    Ensure you have downloaded both the frontend and backend folders.
 
 2. Navigate to the Backend Directory
 
@@ -21,7 +21,7 @@ Backend Setup
 
 4. Configure Environment Variables
 
-    Create an ".env" file in the backend directory and add the " MONGO_URI " variable to connect to your MongoDB database
+    Create ".env" file in the backend directory and add the " MONGO_URI " variable to connect to your MongoDB database
 
     MONGO_URI="your-mongodb-uri-here"
 
