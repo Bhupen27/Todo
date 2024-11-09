@@ -12,11 +12,13 @@ Backend Setup
     use the command : cd backend
 
 3. Install Dependencies
+
     Run the following command to install all necessary packages:
 
     npm install
 
 4. Configure Environment Variables
+
     Create an ".env" file in the backend directory and add the " MONGO_URI " variable to connect to your MongoDB database
 
     MONGO_URI="your-mongodb-uri-here"
@@ -28,14 +30,17 @@ Backend Setup
 
 Frontend Setup
 1. Navigate to the Frontend Directory
+
     Open a new terminal and navigate to the frontend folder.
     use the command : cd frontend
 
 2. Install Dependencies
+
     Run the following command to install all necessary packages:
     npm install
 
 3. Start the Frontend Server
+
     Run the following command to start the server:
     npm run dev
 
