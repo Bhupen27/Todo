@@ -4,9 +4,11 @@ Follow these steps to set up and run the project:
 
 Backend Setup
 1. Download the project files
+
     Ensure you have downloaded both the forntend and backend folders.
 
 2. Navigate to the Backend Directory
+
     Open your terminal and navigate to the backend folder.
 
     use the command : cd backend
@@ -24,6 +26,7 @@ Backend Setup
     MONGO_URI="your-mongodb-uri-here"
 
 5. Start the Backend Server
+
     Run the following command to start the server:
     npm start
 
