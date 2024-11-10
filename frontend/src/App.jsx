@@ -1,14 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import TodoFrom from "./components/TodoFrom.jsx";
-import Popup from "./components/Popup.jsx";
-import ToDo from "./components/ToDo.jsx";
+import TodoItems from "./components/TodoItems.jsx";
 
 const App = () => {
   const [toDos, setToDos] = useState([]);
   const [updateUI, setUpdateUI] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
-  const [popupContent, setPopupContent] = useState({});
+ 
 
   useEffect(() => {
     axios
@@ -25,6 +23,7 @@ const App = () => {
     );
   };
 
+
   return (
     <>
     <div className="bg-[#5084d2] min-h-screen py-8">
@@ -34,27 +33,18 @@ const App = () => {
     </h1>
       <TodoFrom setUpdateUI={setUpdateUI}/>
       {toDos.map((el) => (
-      <ToDo
+      <TodoItems
               key={el._id}
               text={el.toDo}
               id={el._id}
               completed={el.completed}
               setUpdateUI={setUpdateUI}
-              setShowPopup={setShowPopup}
-              setPopupContent={setPopupContent}
               onToggleComplete={toggleComplete}
       />
           ))}
         
-      {showPopup && (
-        <Popup
-          setShowPopup={setShowPopup}
-          popupContent={popupContent}
-          setUpdateUI={setUpdateUI}
-        />
-      )}
       </div>
-      </div>
+    </div>
     </>
   );
 };
